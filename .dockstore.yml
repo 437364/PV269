@@ -1,5 +1,5 @@
  version: 1.2
-  workflows:
+  workflows: Hello_world
   name: example_1
     subclass: WDL
     primaryDescriptorPath:/PV269/hello_world.wdl
