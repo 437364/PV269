@@ -1,0 +1,7 @@
+ version: 1.2
+  workflows:
+  name: example_1
+    subclass: WDL
+    primaryDescriptorPath:/PV269/hello_world.wdl
+    testParameterFiles:
+      - /PV269/hello_world.json
