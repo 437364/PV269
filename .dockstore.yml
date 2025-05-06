@@ -1,7 +1,17 @@
-version: 1.2
+version: 1.0
 workflows:
-  - name: example_1
+  - name: hello
     subclass: WDL
     primaryDescriptorPath: /hello_world/hello.wdl
     testParameterFiles:
       - /hello_world/hello.json
+  - name: N_counter
+    subclass: WDL
+    primaryDescriptorPath: /N_counter/N_counter.wdl
+    testParameterFiles: /N_counter/N_counter.json
+  - name: N_counter_scatter
+    subclass: WDL
+    primaryDescriptorPath: /N_counter/N_counter_scatter.wdl
+    testParameterFiles: /N_counter/N_counter.json
+    
+    
