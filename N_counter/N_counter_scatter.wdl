@@ -24,8 +24,8 @@ workflow N_counter {
 
 
   output {
-    Array[Int] n = count_n.n
-    Int total_n = sum_array.sum
+    Array[Int] chromosome_ns = count_n.n
+    Int scatter_n = sum_array.sum
   }
 
 }
