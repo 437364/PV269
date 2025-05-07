@@ -44,6 +44,7 @@ task split_fasta {
   runtime {
     docker: "quay.io/biocontainers/seqkit:2.10.0--h9ee0642_0"
     preemptible: 3
+    memory: "16 GB"
   }
 }
 
