@@ -25,7 +25,7 @@ This method is substantially less time-efficient that the greedy approach and hi
 
 While this alignment produces sensible output, there is still a large number of insertion candidates, likely due to imperfect RepeatMasker annotation (particularly of the LINE elements). The total number of candidates found is ~20 000, we expect only a couple of *de novo* insertions per generation.
 
-<img src=https://github.com/437364/PV269/blob/main/block_gap_charlie.png title="hAT-Charlie synteny"/>
+<img src=https://github.com/437364/PV269/blob/main/insertions_by_type.png title="Alignment-based insertion candidate counts by transposon type"/>
 
 It is therefore necessary to perform additional verification and processing steps on this candidate list to achieve reliable detection of *de novo* TE insertions. These are discussed in the last section.
 
