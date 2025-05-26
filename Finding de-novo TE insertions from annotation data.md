@@ -25,7 +25,7 @@ This method is substantially less time-efficient that the greedy approach and hi
 
 While this alignment produces sensible output, there is still a large number of insertion candidates, likely due to imperfect RepeatMasker annotation (particularly of the LINE elements). The total number of candidates found is ~20 000, we expect only a couple of *de novo* insertions per generation.
 
-[insertions_by_type.jpg](insertions_by_type.jpg)
+<img src=https://github.com/437364/PV269/blob/main/block_gap_charlie.png title="hAT-Charlie synteny"/>
 
 It is therefore necessary to perform additional verification and processing steps on this candidate list to achieve reliable detection of *de novo* TE insertions. These are discussed in the last section.
 
@@ -38,7 +38,8 @@ We first extracted shared syntenic blocks in the proband genome and constructed 
 
 Next, we selected only the maternal chromosomes (covered by gaps < 50%) and only the gaps that could have been plausibly caused by an insertion of a single element (size < 50 kb). This yielded ~2000 gaps in the proband's genome. To investigate whether these gaps could be explained by TEs, we intersected the filtered gaps with RepeatMasker annotations and evaluated how much of each gap was covered. We retained only those cases where a single family covered > 50 % of the gap and where > 80 % of the repeat annotation was contained within the gap. This filtering resulted in such 4 gaps/elements found, 1 hAT-Charlie element and 3 LINE elements. 
 We attempted to manually verify one of the most promising hits, MER58B transposon from hAT-Charlie family. After visualizing the region of interest in grandmother (PAN010) and proband (PAN028) genome, it was clear that this hit does not represent *de novo* insertion.
-<img src=https://github.com/437364/PV269/blob/main/block_gap_charlie.png width="300" title="hAT-Charlie synteny"/>
+
+<img src=https://github.com/437364/PV269/blob/main/block_gap_charlie.png title="hAT-Charlie synteny"/>
 
 Code: [extract_bed.ipynb](extract_bed.ipynb)
 
